@@ -5,7 +5,7 @@ client.connect()
         return client.query(`
             CREATE TABLE todo (
                 id SERIAL PRIMARY KEY,
-                text VARCHAR(256) NOT NULL,
+                text VARCHAR(256) NOT NULL
             );            
     `);
     })
