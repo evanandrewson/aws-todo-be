@@ -7,7 +7,7 @@ client.connect()
         return Promise.all(
             fakeData.map(item => {
                 return client.query(`
-                    INSERT INTO todo (text)
+                    INSERT INTO todos (text)
                     VALUES ($1)
                     RETURNING *;
                 `,
